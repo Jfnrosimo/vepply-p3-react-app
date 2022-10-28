@@ -16,7 +16,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "TEST":
+    case "ADD_NEW_ITEM":
       return state;
     default:
       return state;
