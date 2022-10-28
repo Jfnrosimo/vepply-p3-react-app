@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Potato",
+    "kilogram": 100,
+    "category": "vegetable"
+  },
+  {
+    "name": "Cabbage",
+    "kilogram": 50,
+    "category": "vegetable"
+  },
+  {
+    "name": "Potato",
+    "kilogram": 210,
+    "category": "vegetable"
+  },
+  {
+    "name": "Potato",
+    "kilogram": 50,
+    "category": "vegetable"
+  },
+  {
+    "name": "Carrot",
+    "kilogram": 20,
+    "category": "vegetable"
+  },
+  {
+    "name": "Potato",
+    "kilogram": 300,
+    "category": "vegetable"
+  }
+]

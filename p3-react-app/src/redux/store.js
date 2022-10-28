@@ -1,5 +1,5 @@
 //Import redux
-import createStore from "redux";
+import { createStore } from "redux";
 
 //Import reducer
 import reducer from "./reducer";
