@@ -25,13 +25,16 @@ const ProductListsPage = () => {
             <tr>
               <th>Name</th>
               <th>Kilo</th>
+              <th>Date Planted</th>
+              <th>Harvest Date</th>
               <th>Producer</th>
-              <th>Image</th>
             </tr>
             {productData.map((item) => (
               <ProductRow
                 name={item.name}
                 kilogram={item.kilogram}
+                datePlanted={item.datePlanted}
+                dateOfHarvest={item.dateOfHarvest}
                 producer={item.producer}
               />
             ))}

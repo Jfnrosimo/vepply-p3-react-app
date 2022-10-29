@@ -5,10 +5,13 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 
 const ProductForm = () => {
+  //Create variable and function to add each input to the initial state using useState hook
   const [name, setName] = useState("");
   const [kilo, setKilo] = useState(0);
   const [image, setImage] = useState("");
   const [producer, setProducer] = useState("");
+  const [datePlanted, setDatePlanted] = useState("");
+  const [dateOfHarvest, setDateOfHarvest] = useState("");
 
   const dispatch = useDispatch();
 
@@ -24,7 +27,13 @@ const ProductForm = () => {
 
     dispatch({
       type: "ADD_NEW_PRODUCT",
-      payload: { name: name, kilogram: kilo, producer: producer },
+      payload: {
+        name: name,
+        kilogram: kilo,
+        producer: producer,
+        datePlanted: datePlanted,
+        dateOfHarvest: dateOfHarvest,
+      },
     });
   };
 
@@ -55,6 +64,22 @@ const ProductForm = () => {
           type="text"
           placeholder="Enter your name/group"
           onChange={(e) => setProducer(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="datePlanted">Date planted:</label>
+        <input
+          id="datePlanted"
+          type="date"
+          onChange={(e) => setDatePlanted(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="date">Date planted:</label>
+        <input
+          id="date"
+          type="date"
+          onChange={(e) => setDateOfHarvest(e.target.value)}
         />
       </div>
       <div>

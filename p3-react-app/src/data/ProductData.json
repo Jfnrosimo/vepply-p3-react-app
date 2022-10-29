@@ -2,31 +2,43 @@
   {
     "name": "Potato",
     "kilogram": 100,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-11-11",
     "producer": "Ben's Farm" 
   },
   {
     "name": "Cabbage",
     "kilogram": 50,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-11-11",
     "producer": "Ben's Farm" 
   },
   {
     "name": "Potato",
     "kilogram": 210,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-11-11",
     "producer": "Farmers Fresh Picks" 
   },
   {
     "name": "Potato",
     "kilogram": 50,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-11-11",
     "producer": "Santa Cruz Community Farmers’ Market" 
   },
   {
     "name": "Carrot",
     "kilogram": 20,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-11-11",
     "producer": "Ben's Farm" 
   },
   {
     "name": "Potato",
     "kilogram": 300,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
     "producer": "Organic Farms" 
   }
 ]

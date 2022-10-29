@@ -11,9 +11,19 @@ const reducer = (state = initialState, action) => {
       let newProduct = {
         name: action.payload.name,
         kilogram: action.payload.kilogram,
+        datePlanted: action.payload.datePlanted,
+        dateOfHarvest: action.payload.dateOfHarvest,
         producer: action.payload.producer,
       };
       return { ...state, productData: [...state.productData, newProduct] };
+    case "MARK_AS_HARVESTED":
+      console.log("HARVESTED");
+      return {
+        ...state,
+        productData: state.productData.filter(
+          (data) => data.name !== action.payload.name
+        ),
+      };
     default:
       return state;
   }
