@@ -2,6 +2,7 @@
 import { useDispatch } from "react-redux";
 
 const ProductRow = ({
+  id,
   name,
   kilogram,
   datePlanted,
@@ -22,7 +23,7 @@ const ProductRow = ({
           onClick={() =>
             dispatch({
               type: "MARK_AS_HARVESTED",
-              payload: { name: name, producer: producer },
+              payload: { id: id, name: name, producer: producer },
             })
           }
         >

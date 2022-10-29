@@ -1,8 +1,11 @@
+//Import uuid
+import { v4 as uuidv4 } from "uuid";
+
 //Import hook
 import { useState } from "react";
 
 //Import redux
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductForm = () => {
   //Create variable and function to add each input to the initial state using useState hook
@@ -12,6 +15,7 @@ const ProductForm = () => {
   const [producer, setProducer] = useState("");
   const [datePlanted, setDatePlanted] = useState("");
   const [dateOfHarvest, setDateOfHarvest] = useState("");
+  const [id, setId] = useState("");
 
   const dispatch = useDispatch();
 
@@ -28,6 +32,7 @@ const ProductForm = () => {
     dispatch({
       type: "ADD_NEW_PRODUCT",
       payload: {
+        id: id,
         name: name,
         kilogram: kilo,
         producer: producer,

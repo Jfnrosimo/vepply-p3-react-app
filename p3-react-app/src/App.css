@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+
+:root {
+  --light-color: #FAFAFA;
+}
 body * {
   font-family: 'Mulish', sans-serif;
 }

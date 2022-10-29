@@ -15,6 +15,7 @@ const App = () => {
   return (
     <>
       <Header />
+
       {/* Routes */}
       <Routes>
         <Route path="/" element={<HomePage />}></Route>

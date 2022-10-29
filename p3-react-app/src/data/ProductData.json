@@ -1,5 +1,6 @@
 [
   {
+    "id": "32f-f32",
     "name": "Potato",
     "kilogram": 100,
     "datePlanted": "2022-10-18",
@@ -7,6 +8,7 @@
     "producer": "Ben's Farm" 
   },
   {
+    "id": "f3f23",
     "name": "Cabbage",
     "kilogram": 50,
     "datePlanted": "2022-10-18",
@@ -14,6 +16,7 @@
     "producer": "Ben's Farm" 
   },
   {
+    "id": "fs3f3",
     "name": "Potato",
     "kilogram": 210,
     "datePlanted": "2022-10-18",
@@ -21,6 +24,7 @@
     "producer": "Farmers Fresh Picks" 
   },
   {
+    "id": "gfdsgj",
     "name": "Potato",
     "kilogram": 50,
     "datePlanted": "2022-10-18",
@@ -28,6 +32,7 @@
     "producer": "Santa Cruz Community Farmers’ Market" 
   },
   {
+    "id": "g43gdfg",
     "name": "Carrot",
     "kilogram": 20,
     "datePlanted": "2022-10-18",
@@ -35,6 +40,7 @@
     "producer": "Ben's Farm" 
   },
   {
+    "id": "g43gsd",
     "name": "Potato",
     "kilogram": 300,
     "datePlanted": "2022-10-18",

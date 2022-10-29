@@ -7,6 +7,9 @@ import { useSelector } from "react-redux";
 const BarChart = () => {
   const productData = useSelector((state) => state.productData);
 
+  // const arrayOfKilo = productData.filter((data) => data.name === "potato");
+  // console.log(arrayOfKilo);
+
   const dashboardData = {
     chartData: {
       labels: productData.map((data) => data.name),
