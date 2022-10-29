@@ -1,6 +1,9 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
+
+  height: 65px;
+  border-bottom: 2px solid grey;
 }
 
 .header-title,

@@ -20,7 +20,13 @@ const HomePage = () => {
     <>
       <div className="main">
         <div className="hero">
-          <h2>Monitor the vegetable supply and production</h2>
+          <div className="hero-description">
+            <h2>Monitor vegetable supply and production</h2>
+            <div className="hero-button">
+              <Link className="start-button">Start</Link>
+              <Link className="add-button">Products</Link>
+            </div>
+          </div>
         </div>
         <BarChart />
         <Link to="/product-list">Product List</Link>

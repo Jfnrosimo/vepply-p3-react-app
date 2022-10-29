@@ -3,6 +3,8 @@
 
 :root {
   --light-color: #FAFAFA;
+  --primary-color: #51724E;
+  --secondary-color: #d0d306;
 }
 body * {
   font-family: 'Mulish', sans-serif;
