@@ -31,6 +31,7 @@ const ProductListsPage = () => {
             </tr>
             {productData.map((item) => (
               <ProductRow
+                key={item.id}
                 id={item.id}
                 name={item.name}
                 kilogram={item.kilogram}
