@@ -2,33 +2,29 @@
 import { useState } from "react";
 
 //Import redux
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const ProductForm = () => {
   const [name, setName] = useState("");
   const [kilo, setKilo] = useState(0);
   const [image, setImage] = useState("");
+  const [producer, setProducer] = useState("");
 
   const dispatch = useDispatch();
 
   const clearForm = () => {
     setName("");
-    setKilo("");
+    setKilo(0);
     setImage("");
+    setProducer("");
   };
 
   const onAddProductHandler = (event) => {
     event.preventDefault();
 
-    // let newProduct = {
-    //   name,
-    //   kilo,
-    //   image,
-    // };
-
     dispatch({
       type: "ADD_NEW_PRODUCT",
-      payload: { name: name, kilogram: kilo },
+      payload: { name: name, kilogram: kilo, producer: producer },
     });
   };
 
@@ -50,6 +46,15 @@ const ProductForm = () => {
           type="number"
           placeholder="Enter estimated kilo"
           onChange={(e) => setKilo(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="producer">Producer's name:</label>
+        <input
+          id="producer"
+          type="text"
+          placeholder="Enter your name/group"
+          onChange={(e) => setProducer(e.target.value)}
         />
       </div>
       <div>

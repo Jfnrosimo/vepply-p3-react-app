@@ -25,10 +25,15 @@ const ProductListsPage = () => {
             <tr>
               <th>Name</th>
               <th>Kilo</th>
+              <th>Producer</th>
               <th>Image</th>
             </tr>
             {productData.map((item) => (
-              <ProductRow name={item.name} kilogram={item.kilogram} />
+              <ProductRow
+                name={item.name}
+                kilogram={item.kilogram}
+                producer={item.producer}
+              />
             ))}
           </tbody>
         </table>

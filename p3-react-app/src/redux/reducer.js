@@ -11,6 +11,7 @@ const reducer = (state = initialState, action) => {
       let newProduct = {
         name: action.payload.name,
         kilogram: action.payload.kilogram,
+        producer: action.payload.producer,
       };
       return { ...state, productData: [...state.productData, newProduct] };
     default:

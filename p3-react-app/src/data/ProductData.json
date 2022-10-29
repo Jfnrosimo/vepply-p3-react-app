@@ -2,31 +2,31 @@
   {
     "name": "Potato",
     "kilogram": 100,
-    "category": "vegetable"
+    "producer": "Ben's Farm" 
   },
   {
     "name": "Cabbage",
     "kilogram": 50,
-    "category": "vegetable"
+    "producer": "Ben's Farm" 
   },
   {
     "name": "Potato",
     "kilogram": 210,
-    "category": "vegetable"
+    "producer": "Farmers Fresh Picks" 
   },
   {
     "name": "Potato",
     "kilogram": 50,
-    "category": "vegetable"
+    "producer": "Santa Cruz Community Farmers’ Market" 
   },
   {
     "name": "Carrot",
     "kilogram": 20,
-    "category": "vegetable"
+    "producer": "Ben's Farm" 
   },
   {
     "name": "Potato",
     "kilogram": 300,
-    "category": "vegetable"
+    "producer": "Organic Farms" 
   }
 ]
