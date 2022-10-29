@@ -22,11 +22,10 @@ const reducer = (state = initialState, action) => {
       return { ...state, productData: [...state.productData, newProduct] };
     case "MARK_AS_HARVESTED":
       console.log(state.productData);
-      let currentData = state.productData;
       return {
         ...state,
         productData: state.productData.filter(
-          (data) => data.name !== action.payload.name
+          (data) => data.id !== action.payload.id
         ),
       };
     default:

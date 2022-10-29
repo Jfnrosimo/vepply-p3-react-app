@@ -24,7 +24,9 @@ const HomePage = () => {
             <h2>Monitor vegetable supply and production</h2>
             <div className="hero-button">
               <Link className="start-button">Start</Link>
-              <Link className="add-button">Products</Link>
+              <Link to="/product-list" className="add-button">
+                Products
+              </Link>
             </div>
           </div>
         </div>
