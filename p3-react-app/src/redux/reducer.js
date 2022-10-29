@@ -3,21 +3,16 @@ import productData from "../data/ProductData.json";
 
 const initialState = {
   productData: productData,
-  chartData: {
-    labels: productData.map((data) => data.name),
-    datasets: [
-      {
-        label: "Current supply (kg)",
-        data: productData.map((data) => data.kilogram),
-      },
-    ],
-  },
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_NEW_ITEM":
-      return state;
+    case "ADD_NEW_PRODUCT":
+      let newProduct = {
+        name: action.payload.name,
+        kilogram: action.payload.kilogram,
+      };
+      return { ...state, productData: [...state.productData, newProduct] };
     default:
       return state;
   }

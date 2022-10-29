@@ -5,8 +5,21 @@ import { Chart as ChartJS } from "chart.js/auto";
 import { useSelector } from "react-redux";
 
 const BarChart = () => {
-  const chartData = useSelector((state) => state.chartData);
-  return <Bar data={chartData} />;
+  const productData = useSelector((state) => state.productData);
+
+  const dashboardData = {
+    chartData: {
+      labels: productData.map((data) => data.name),
+      datasets: [
+        {
+          label: "Current supply (kg)",
+          data: productData.map((data) => data.kilogram),
+        },
+      ],
+    },
+  };
+
+  return <Bar data={dashboardData.chartData} />;
 };
 
 export default BarChart;

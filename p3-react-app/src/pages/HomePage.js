@@ -3,6 +3,8 @@ import BarChart from "../components/BarChart";
 
 //Import redux
 import { useSelector } from "react-redux";
+
+//Import routing
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -11,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       <div className="main">
-        <BarChart chartData={productData} />
+        <BarChart />
         <Link to="/product-list">Product List</Link>
       </div>
     </>

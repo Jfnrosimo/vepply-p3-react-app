@@ -6,14 +6,32 @@ import { useSelector } from "react-redux";
 
 //Import component
 import ProductForm from "../components/ProductForm";
+import ProductRow from "../components/ProductRow";
 
 const ProductListsPage = () => {
-  const chartData = useSelector((state) => state.chartData);
+  const productData = useSelector((state) => state.productData);
 
   return (
     <>
       <div>
         <ProductForm />
+        <table>
+          <thead>
+            <tr>
+              <th>List of Products</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <th>Kilo</th>
+              <th>Image</th>
+            </tr>
+            {productData.map((item) => (
+              <ProductRow name={item.name} kilogram={item.kilogram} />
+            ))}
+          </tbody>
+        </table>
         <Link to="/">Back to Dashboard</Link>
       </div>
     </>
