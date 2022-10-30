@@ -46,5 +46,70 @@
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "Organic Farms" 
+  },
+  {
+    "id": "2f24",
+    "name": "brocolli",
+    "kilogram": 300,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "2f24-g45",
+    "name": "cauliflower",
+    "kilogram": 300,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "2f24-c2r",
+    "name": "radish",
+    "kilogram": 300,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "21224-c2r",
+    "name": "tomato",
+    "kilogram": 350,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "2122cc34-c2r",
+    "name": "cucumber",
+    "kilogram": 450,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "212v324-c2r",
+    "name": "sayote",
+    "kilogram": 450,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "212v324-c32c2r",
+    "name": "lettuce",
+    "kilogram": 450,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
+  },
+  {
+    "id": "212-v324-c32c2r",
+    "name": "onion",
+    "kilogram": 450,
+    "datePlanted": "2022-10-18",
+    "dateOfHarvest": "2022-10-18",
+    "producer": "Organic Farms" 
   }
+
 ]

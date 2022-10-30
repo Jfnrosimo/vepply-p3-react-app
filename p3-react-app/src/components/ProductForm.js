@@ -64,7 +64,7 @@ const ProductForm = () => {
           type="text"
           value={name}
           placeholder="Vegetable name"
-          onChange={(e) => setName(e.target.value.toLowerCase())}
+          onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div>

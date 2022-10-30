@@ -10,7 +10,7 @@ const TopProductTable = () => {
   //Filter each object in the array with the same name and add its kilogram, then return a new object that shows total kilogram of each product
   const chartData = [];
   productData.forEach(function (product) {
-    let productName = product.name.trim();
+    let productName = product.name.trim().toLowerCase();
 
     if (!this[productName]) {
       this[productName] = { name: productName, kilogram: 0 };
@@ -37,12 +37,15 @@ const TopProductTable = () => {
         </tr>
       </thead>
       <tbody>
-        {descendingSortChartData.map((data) => (
-          <tr>
-            <td>{data.name.trim()}</td>
-            <td>{data.kilogram} kgs.</td>
-          </tr>
-        ))}
+        {descendingSortChartData.map(
+          (data, index) =>
+            index < 10 && (
+              <tr>
+                <td>{data.name.trim()}</td>
+                <td>{data.kilogram} kgs.</td>
+              </tr>
+            )
+        )}
       </tbody>
     </table>
   );

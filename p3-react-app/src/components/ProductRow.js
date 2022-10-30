@@ -12,7 +12,7 @@ const ProductRow = ({
   const dispatch = useDispatch();
   return (
     <tr>
-      <td>{name}</td>
+      <td>{name.toLowerCase()}</td>
       <td>{kilogram} kg</td>
       <td>{datePlanted}</td>
       <td>{dateOfHarvest}</td>
