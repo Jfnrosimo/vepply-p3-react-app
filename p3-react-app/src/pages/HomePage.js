@@ -1,5 +1,6 @@
 //Import components
 import BarChart from "../components/BarChart";
+import TopProductTable from "../components/TopProductTable";
 
 //Import redux
 import { useSelector } from "react-redux";
@@ -31,6 +32,8 @@ const HomePage = () => {
           </div>
         </div>
         <div className="dashboard-container">
+          <h3>SUPPLY DASHBOARD</h3>
+          <TopProductTable />
           <BarChart />
         </div>
         <Link to="/product-list">Product List</Link>

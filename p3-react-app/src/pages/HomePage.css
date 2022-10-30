@@ -54,3 +54,12 @@
 .add-button:hover {
   background-color: var(--primary-color);
 }
+
+.dashboard-container {
+  margin: 0;
+  background-color: var(--tertiary-light-color);
+}
+
+.dashboard-container h3 {
+  margin: 0;
+}
