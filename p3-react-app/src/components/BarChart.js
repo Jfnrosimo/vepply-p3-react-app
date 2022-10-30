@@ -17,15 +17,17 @@ const BarChart = () => {
     this[product.name].kilogram += product.kilogram;
   }, {});
 
-  const sortChartData = chartData.sort((a, b) => a.kilogram - b.kilogram);
+  const ascendingSortChartData = chartData.sort(
+    (a, b) => a.kilogram - b.kilogram
+  );
 
   const dashboard = {
     allChartData: {
-      labels: sortChartData.map((data) => data.name),
+      labels: ascendingSortChartData.map((data) => data.name),
       datasets: [
         {
           label: "Current supply (kg)",
-          data: sortChartData.map((data) => data.kilogram),
+          data: ascendingSortChartData.map((data) => data.kilogram),
         },
       ],
     },

@@ -30,7 +30,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <BarChart />
+        <div className="dashboard-container">
+          <BarChart />
+        </div>
         <Link to="/product-list">Product List</Link>
       </div>
     </>
