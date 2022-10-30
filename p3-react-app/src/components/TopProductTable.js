@@ -13,7 +13,7 @@ const TopProductTable = () => {
     let productName = product.name.trim();
 
     if (!this[productName]) {
-      this[productName] = { name: productName.trim(), kilogram: 0 };
+      this[productName] = { name: productName, kilogram: 0 };
       chartData.push(this[productName]);
     }
     this[productName].kilogram += Number(product.kilogram);
