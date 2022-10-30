@@ -18,7 +18,7 @@ const ProductListsPage = () => {
         <table>
           <thead>
             <tr>
-              <th>List of Products</th>
+              <th colSpan={5}>List of Products</th>
             </tr>
           </thead>
           <tbody>

@@ -1,6 +1,9 @@
 //Import redux
 import { useSelector } from "react-redux";
 
+//Import css
+import "./TopProductTable.css";
+
 const TopProductTable = () => {
   const productData = useSelector((state) => state.productData);
 
