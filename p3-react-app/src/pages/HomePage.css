@@ -56,10 +56,34 @@
 }
 
 .dashboard-container {
-  margin: 0;
-  background-color: var(--tertiary-light-color);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  background-color: rgb(210, 210, 210, 0.7);
 }
 
 .dashboard-container h3 {
   margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.dashboard-table {
+  display: flex;
+  justify-content: center;
+  padding: 30px 5px;
+}
+
+.chart-container{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.doughnut-chart {
+  width: 30%;
+}
+
+.bar-chart {
+  width: 60%;
 }

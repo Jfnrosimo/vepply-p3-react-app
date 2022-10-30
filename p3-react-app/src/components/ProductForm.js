@@ -51,7 +51,7 @@ const ProductForm = () => {
       });
       setError(false);
       clearForm();
-      alert(`Sucessfully registered ${kilo} kg of planted ${name}`);
+      alert(`Sucessfully registered ${kilo} kg of planted ${name.trim()}`);
     }
   };
 
@@ -74,7 +74,7 @@ const ProductForm = () => {
           type="number"
           value={kilo}
           placeholder="Enter estimated kilo"
-          onChange={(e) => setKilo(e.target.value)}
+          onChange={(e) => Number(setKilo(e.target.value))}
         />
       </div>
       <div>

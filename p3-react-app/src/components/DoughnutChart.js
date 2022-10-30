@@ -1,10 +1,9 @@
 //Import chart js
-import { Bar } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 
-//Import redux
 import { useSelector } from "react-redux";
 
-const BarChart = () => {
+const DoughnutChart = () => {
   const productData = useSelector((state) => state.productData);
 
   //Filter each object in the array with the same name and add its kilogram, then return a new object that shows total kilogram of each product
@@ -40,12 +39,13 @@ const BarChart = () => {
           ],
           borderColor: "black",
           borderWidth: 1,
+          hoverOffset: 5,
         },
       ],
     },
   };
 
-  return <Bar data={dashboard.allChartData} />;
+  return <Doughnut data={dashboard.allChartData} />;
 };
 
-export default BarChart;
+export default DoughnutChart;

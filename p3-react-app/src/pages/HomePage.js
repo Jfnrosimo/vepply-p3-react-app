@@ -1,6 +1,7 @@
 //Import components
-import BarChart from "../components/BarChart";
 import TopProductTable from "../components/TopProductTable";
+import DoughnutChart from "../components/DoughnutChart";
+import BarChart from "../components/BarChart";
 
 //Import redux
 import { useSelector } from "react-redux";
@@ -13,6 +14,9 @@ import heroImg from "../assets/images/hero-bg-image.jpg";
 
 //Import css
 import "./HomePage.css";
+
+//Import chartjs
+import { Chart as ChartJS } from "chart.js/auto";
 
 const HomePage = () => {
   const productData = useSelector((state) => state.productData);
@@ -32,9 +36,20 @@ const HomePage = () => {
           </div>
         </div>
         <div className="dashboard-container">
-          <h3>SUPPLY DASHBOARD</h3>
-          <TopProductTable />
-          <BarChart />
+          <h3 className="dashboard-title">SUPPLY DASHBOARD</h3>
+          <div className="dashboard-table">
+            <TopProductTable />
+          </div>
+          <div className="chart-container">
+            <div className="doughnut-chart">
+              <h4>TITLE</h4>
+              <DoughnutChart />
+            </div>
+            <div className="bar-chart">
+              <h4>TITLE</h4>
+              <BarChart />
+            </div>
+          </div>
         </div>
         <Link to="/product-list">Product List</Link>
       </div>

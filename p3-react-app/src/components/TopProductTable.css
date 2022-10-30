@@ -1,6 +1,8 @@
-table{
+.top-product-table{
+  width: 60%;
   border: 1px solid var(--dark-color);
 }
+
 tr,
 th,
 td {

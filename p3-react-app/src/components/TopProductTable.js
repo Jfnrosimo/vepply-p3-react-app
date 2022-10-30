@@ -10,17 +10,20 @@ const TopProductTable = () => {
   //Filter each object in the array with the same name and add its kilogram, then return a new object that shows total kilogram of each product
   const chartData = [];
   productData.forEach(function (product) {
-    if (!this[product.name]) {
-      this[product.name] = { name: product.name, kilogram: 0 };
-      chartData.push(this[product.name]);
+    let productName = product.name.trim();
+
+    if (!this[productName]) {
+      this[productName] = { name: productName.trim(), kilogram: 0 };
+      chartData.push(this[productName]);
     }
-    this[product.name].kilogram += product.kilogram;
+    this[productName].kilogram += Number(product.kilogram);
   }, {});
 
   //Sort the chart data into descending order of its kilogram property
   const descendingSortChartData = chartData.sort(
     (a, b) => b.kilogram - a.kilogram
   );
+  console.log(descendingSortChartData);
 
   return (
     <table className="top-product-table">
@@ -30,13 +33,13 @@ const TopProductTable = () => {
         </tr>
         <tr>
           <th>Crop Name</th>
-          <th>Current Total &#40;kilogram&#41;</th>
+          <th>Total Harvest &#40;kilogram&#41;</th>
         </tr>
       </thead>
       <tbody>
         {descendingSortChartData.map((data) => (
           <tr>
-            <td>{data.name}</td>
+            <td>{data.name.trim()}</td>
             <td>{data.kilogram} kgs.</td>
           </tr>
         ))}
