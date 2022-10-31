@@ -1,7 +1,11 @@
-.product-form {
-  width: 27%;
-  padding: 10px;
+.product-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
 
+.product-form {
+  padding: 10px;
 }
 
 .product-form div {
@@ -11,4 +15,8 @@
 .product-form div {
   display: flex;
   justify-content: space-between;
+}
+
+.product-form input {
+  width: 50%;
 }

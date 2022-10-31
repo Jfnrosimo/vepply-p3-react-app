@@ -17,15 +17,15 @@ import "./ProductListsPage.css";
 const ProductListsPage = () => {
   const productData = useSelector((state) => state.productData);
 
-  const [page, setPage] = useState(0); // create page state
+  // const [page, setPage] = useState(0); // create page state
 
-  const productPageData = useMemo(() => {
-    //use useMemo to memorize page
-    return productData.slice(page * 5, page * 5 + 5);
-  }, [page]);
+  // const productPageData = useMemo(() => {
+  //   //use useMemo to memorize page
+  //   return productData.slice(page * 5, page * 5 + 5);
+  // }, [page]);
 
-  const nextPage = () => setPage((prev) => prev + 1);
-  const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
+  // const nextPage = () => setPage((prev) => prev + 1);
+  // const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
 
   return (
     <>
@@ -38,7 +38,7 @@ const ProductListsPage = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr className="table-row-heading">
               <th>Name</th>
               <th>Kilo</th>
               <th>Date Planted</th>
@@ -59,9 +59,8 @@ const ProductListsPage = () => {
           </tbody>
         </table>
       </div>
-      <button onClick={prevPage}>Previous page</button>
-      <button onClick={nextPage}>Next page</button>
-      <Link to="/">Back to Dashboard</Link>
+      {/* <button onClick={prevPage}>Previous page</button>
+      <button onClick={nextPage}>Next page</button> */}
     </>
   );
 };

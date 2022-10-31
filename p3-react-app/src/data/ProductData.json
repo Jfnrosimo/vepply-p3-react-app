@@ -53,11 +53,11 @@
     "kilogram": 300,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "The Farmers Gardens" 
   },
   {
     "id": "2f24-g45",
-    "name": "cauliflower",
+    "name": "Healthy Picks",
     "kilogram": 300,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
@@ -65,11 +65,11 @@
   },
   {
     "id": "2f24-c2r",
-    "name": "radish",
+    "name": "raddish",
     "kilogram": 300,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "Jenny's Farm" 
   },
   {
     "id": "21224-c2r",
@@ -77,7 +77,7 @@
     "kilogram": 350,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "Louie's Farm" 
   },
   {
     "id": "2122cc34-c2r",
@@ -85,7 +85,7 @@
     "kilogram": 450,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "Teresa's Farms" 
   },
   {
     "id": "212v324-c2r",
@@ -93,7 +93,7 @@
     "kilogram": 450,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "Elnora's Farms" 
   },
   {
     "id": "212v324-c32c2r",
@@ -101,7 +101,7 @@
     "kilogram": 450,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "Paolo's Farms" 
   },
   {
     "id": "212-v324-c32c2r",
@@ -109,7 +109,6 @@
     "kilogram": 450,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
-    "producer": "Organic Farms" 
+    "producer": "Mary's Farms" 
   }
-
 ]
