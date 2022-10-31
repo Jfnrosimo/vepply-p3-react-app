@@ -1,0 +1,11 @@
+footer * {
+  margin: 0;
+}
+
+footer {
+  background-color: var(--lighter-dark-color);
+  color: var(--light-color)
+}
+
+
+

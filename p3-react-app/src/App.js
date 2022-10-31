@@ -16,7 +16,6 @@ const App = () => {
   return (
     <>
       <Header />
-      <Footer />
       {/* Routes */}
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
@@ -25,6 +24,7 @@ const App = () => {
           element={<ProductListsPage exact={true} />}
         ></Route>
       </Routes>
+      <Footer />
     </>
   );
 };
