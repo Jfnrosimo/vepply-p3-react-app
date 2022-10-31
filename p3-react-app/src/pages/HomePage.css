@@ -105,6 +105,8 @@
 
 .list-button-container img {
   padding-left: 8px;
+  width: 50px;
+  background-image: var(--primary-color);
 }
 
 .list-button-container a:hover {
@@ -116,9 +118,4 @@
   text-decoration: none;
   font-size: 2rem;
   color: var(--dark-color)
-}
-
-.list-button-container img {
-  width: 50px;
-  background-image: var(--primary-color)
 }

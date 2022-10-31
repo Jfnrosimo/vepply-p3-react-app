@@ -9,10 +9,12 @@
   flex-direction: column;
   height: 350px;
   border: 2px solid var(--dark-color);
-  padding: 10px
+  padding: 10px;
+  margin-bottom: 35px;
 }
 
-.product-form h2, small{
+.product-form h2, 
+small{
   text-align: center;
 }
 
@@ -41,4 +43,33 @@
 .link-container {
   display: flex;
   flex-direction: column;
+}
+
+.link-container a {
+  display: flex;
+  align-items: center;
+  padding: 10px
+}
+
+.dashboard-link,
+.my-products-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+  border: 1px solid var(--lighter-dark-color)
+}
+
+.dashboard-link:hover {
+  background-color: var(--secondary-color);
+}
+
+.dashboard-link img {
+  width: 60px;
+  height: 35px;
+  padding-right: 15px;
+}
+
+.my-products-link {
+
 }

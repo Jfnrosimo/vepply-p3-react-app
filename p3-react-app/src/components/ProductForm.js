@@ -10,6 +10,9 @@ import "./ProductForm.css";
 //Import link routing
 import { Link } from "react-router-dom";
 
+//Import image
+import arrowLeft from "../assets/icons/arrow-left.png";
+
 const ProductForm = () => {
   //Create variable and function to add each input to the initial state using useState hook
   const [name, setName] = useState("");
@@ -129,8 +132,13 @@ const ProductForm = () => {
           {hasError && <small className="error-msg">{msgError}</small>}
         </form>
         <div className="link-container">
-          <Link to="/">Back to Dashboard</Link>
-          <Link to="">Back to Dashboard</Link>
+          <Link className="dashboard-link" to="/">
+            <img src={arrowLeft} />
+            Back to Dashboard
+          </Link>
+          <Link className="my-products-link" to="">
+            Harvested crop
+          </Link>
         </div>
       </div>
     </>

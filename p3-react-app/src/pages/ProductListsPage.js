@@ -34,7 +34,7 @@ const ProductListsPage = () => {
         <table>
           <thead>
             <tr>
-              <th colSpan={5}>List of Products</th>
+              <th colSpan={5}>List of All Products</th>
             </tr>
           </thead>
           <tbody>

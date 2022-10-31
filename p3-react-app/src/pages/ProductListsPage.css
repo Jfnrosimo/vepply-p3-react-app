@@ -2,11 +2,16 @@
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
-
   background-color: rgb(210, 210, 210, 0.7);
 }
 
 .product-list-container table{
   width: 70%;
   height: 90px;
+
+  border: 1px solid var(--dark-color)
+}
+
+.product-list-container thead th {
+  font-size: 1.4rem;
 }
