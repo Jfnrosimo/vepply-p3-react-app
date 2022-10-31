@@ -45,7 +45,7 @@ const ProductListsPage = () => {
               <th>Harvest Date</th>
               <th>Producer</th>
             </tr>
-            {productPageData.map((item) => (
+            {productData.map((item) => (
               <ProductRow
                 key={item.id}
                 id={item.id}

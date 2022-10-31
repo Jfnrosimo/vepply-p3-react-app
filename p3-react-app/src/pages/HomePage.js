@@ -10,8 +10,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 //Import image
-import heroImg from "../assets/images/hero-bg-image.jpg";
-
+import arrowRight from "../assets/icons/arrow-right.png";
 //Import css
 import "./HomePage.css";
 
@@ -51,7 +50,12 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <Link to="/product-list">Product List</Link>
+        <div className="list-button-container">
+          <Link to="/product-list">
+            Product List
+            <img src={arrowRight} alt="arrow right icon" />
+          </Link>
+        </div>
       </div>
     </>
   );

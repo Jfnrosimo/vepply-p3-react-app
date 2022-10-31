@@ -87,3 +87,38 @@
 .bar-chart {
   width: 60%;
 }
+
+.list-button-container{
+  padding: 40px 0 100px;
+}
+
+.list-button-container, 
+.list-button-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-button-container a{
+  padding: 3px 9px;
+}
+
+.list-button-container img {
+  padding-left: 8px;
+}
+
+.list-button-container a:hover {
+  background-color: var(--primary-color);
+}
+
+.list-button-container a {
+  border: 1px solid var(--lighter-dark-color);
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--dark-color)
+}
+
+.list-button-container img {
+  width: 50px;
+  background-image: var(--primary-color)
+}
