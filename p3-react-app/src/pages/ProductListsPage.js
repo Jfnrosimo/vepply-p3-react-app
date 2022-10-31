@@ -22,7 +22,7 @@ const ProductListsPage = () => {
   }, [page]);
 
   const nextPage = () => setPage((prev) => prev + 1);
-  const prevPage = () => setPage((prev) => (prev > 0 ? (prev = 1) : prev)); // prev page need to add condition to avoid page going below 0
+  const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
 
   return (
     <>

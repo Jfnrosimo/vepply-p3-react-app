@@ -1,5 +1,6 @@
 //Import component
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 //Import page
 import ProductListsPage from "./pages/ProductListsPage";
@@ -15,7 +16,7 @@ const App = () => {
   return (
     <>
       <Header />
-
+      <Footer />
       {/* Routes */}
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
