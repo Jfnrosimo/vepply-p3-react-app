@@ -11,6 +11,9 @@ import ProductRow from "../components/ProductRow";
 //Import state hook and useMemo
 import { useState, useMemo } from "react";
 
+//Import css
+import "./ProductListsPage.css";
+
 const ProductListsPage = () => {
   const productData = useSelector((state) => state.productData);
 
@@ -26,7 +29,7 @@ const ProductListsPage = () => {
 
   return (
     <>
-      <div>
+      <div className="product-list-container">
         <ProductForm />
         <table>
           <thead>
@@ -55,10 +58,10 @@ const ProductListsPage = () => {
             ))}
           </tbody>
         </table>
-        <button onClick={prevPage}>Previous page</button>
-        <button onClick={nextPage}>Next page</button>
-        <Link to="/">Back to Dashboard</Link>
       </div>
+      <button onClick={prevPage}>Previous page</button>
+      <button onClick={nextPage}>Next page</button>
+      <Link to="/">Back to Dashboard</Link>
     </>
   );
 };

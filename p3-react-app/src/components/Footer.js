@@ -18,7 +18,7 @@ const Footer = () => {
           <ul>
             <li>Bugs Light Year</li>
             <li>Uplift Code Camp</li>
-            <li>DICT CAR</li>
+            <li>Google</li>
           </ul>
         </div>
         <div className="footer-column">
