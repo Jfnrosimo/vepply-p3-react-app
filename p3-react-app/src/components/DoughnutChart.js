@@ -9,11 +9,12 @@ const DoughnutChart = () => {
   //Filter each object in the array with the same name and add its kilogram, then return a new object that shows total kilogram of each product
   const chartData = [];
   productData.forEach(function (product) {
-    if (!this[product.name]) {
-      this[product.name] = { name: product.name, kilogram: 0 };
-      chartData.push(this[product.name]);
+    let productName = product.name.trim().toLowerCase();
+    if (!this[productName]) {
+      this[productName] = { name: productName, kilogram: 0 };
+      chartData.push(this[productName]);
     }
-    this[product.name].kilogram += product.kilogram;
+    this[productName].kilogram += Number(product.kilogram);
   }, {});
 
   //Sort the chart data into ascending order of its kilogram

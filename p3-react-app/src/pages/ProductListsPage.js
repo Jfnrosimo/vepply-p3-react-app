@@ -31,6 +31,7 @@ const ProductListsPage = () => {
     <>
       <div className="product-list-container">
         <ProductForm />
+
         <table>
           <thead>
             <tr>
@@ -61,6 +62,7 @@ const ProductListsPage = () => {
       </div>
       {/* <button onClick={prevPage}>Previous page</button>
       <button onClick={nextPage}>Next page</button> */}
+
       <div className="product-list-table-2">
         <table>
           <thead>

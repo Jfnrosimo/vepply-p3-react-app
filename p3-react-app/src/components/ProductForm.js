@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 //Import image
 import arrowLeft from "../assets/icons/arrow-left.png";
+import arrowDown from "../assets/icons/arrow-down.png";
 
 const ProductForm = () => {
   //Create variable and function to add each input to the initial state using useState hook
@@ -133,11 +134,11 @@ const ProductForm = () => {
         </form>
         <div className="link-container">
           <Link className="dashboard-link" to="/">
-            <img src={arrowLeft} />
+            <img src={arrowLeft} alt="arrow left icon" />
             Back to Dashboard
           </Link>
           <Link className="my-products-link" to="">
-            Harvested crop
+            Harvested crop <img src={arrowDown} alt="arrow down icon" />
           </Link>
         </div>
       </div>

@@ -71,5 +71,15 @@ small{
 }
 
 .my-products-link {
+  display: flex;
+  justify-content: center;
+}
 
+.my-products-link:hover {
+  background-color: var(--light-color);
+}
+
+.my-products-link img{
+  width: 40px;
+  padding-left: 20px;
 }
