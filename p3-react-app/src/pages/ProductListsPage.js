@@ -61,6 +61,19 @@ const ProductListsPage = () => {
       </div>
       {/* <button onClick={prevPage}>Previous page</button>
       <button onClick={nextPage}>Next page</button> */}
+      <div className="product-list-table-2">
+        <table>
+          <thead>
+            <tr>
+              <th>Your harvested crops</th>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <th>Kilo</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </>
   );
 };

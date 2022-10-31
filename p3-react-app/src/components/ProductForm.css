@@ -5,18 +5,40 @@
 }
 
 .product-form {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  border: 2px solid var(--dark-color);
+  padding: 10px
+}
+
+.product-form h2, small{
+  text-align: center;
 }
 
 .product-form div {
-  padding-bottom: 10px;
-}
-
-.product-form div {
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .product-form input {
   width: 50%;
+}
+
+.product-form button {
+  padding: 5px;
+  border: 2px solid var(--primary-color);
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.product-form button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
 }
