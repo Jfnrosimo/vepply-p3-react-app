@@ -1,0 +1,14 @@
+.product-form {
+  width: 27%;
+  padding: 10px;
+
+}
+
+.product-form div {
+  padding-bottom: 10px;
+}
+
+.product-form div {
+  display: flex;
+  justify-content: space-between;
+}
