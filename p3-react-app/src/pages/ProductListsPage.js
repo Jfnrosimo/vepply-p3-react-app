@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 //Import component
 import ProductForm from "../components/ProductForm";
 import ProductRow from "../components/ProductRow";
+import HarvestedRow from "../components/ProductRow";
 
 //Import state hook and useMemo
 import { useState, useMemo } from "react";
@@ -16,6 +17,7 @@ import "./ProductListsPage.css";
 
 const ProductListsPage = () => {
   const productData = useSelector((state) => state.productData);
+  const harvestTable = useSelector((state) => state.harvestTable);
 
   // const [page, setPage] = useState(0); // create page state
 
@@ -27,6 +29,15 @@ const ProductListsPage = () => {
   // const nextPage = () => setPage((prev) => prev + 1);
   // const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
 
+  // const [harvestTable, setHarvestTable] = useState([]);
+  // const onHarvested = (id) => {
+  //   //Create state for harvest table list
+  //   let harvestedItem = productData.filter((item) => item.id === id);
+  //   setHarvestTable([
+  //     ...harvestTable,
+  //     { name: harvestedItem[0].name, kilogram: harvestedItem[0].kilogram },
+  //   ]);
+  // };
   return (
     <>
       <div className="product-list-container">
@@ -69,11 +80,27 @@ const ProductListsPage = () => {
             <tr>
               <th>Your harvested crops</th>
             </tr>
-            <tr>
+          </thead>
+          <tbody>
+            <tr className="table-row-heading">
               <th>Name</th>
               <th>Kilo</th>
+              <th>Date Planted</th>
+              <th>Harvest Date</th>
+              <th>Producer</th>
             </tr>
-          </thead>
+            {harvestTable.map((item) => (
+              <HarvestedRow
+                key={item.id}
+                id={item.id}
+                name={item.name}
+                kilogram={item.kilogram}
+                datePlanted={item.datePlanted}
+                dateOfHarvest={item.dateOfHarvest}
+                producer={item.producer}
+              />
+            ))}
+          </tbody>
         </table>
       </div>
     </>

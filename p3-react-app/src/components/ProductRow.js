@@ -12,7 +12,7 @@ const ProductRow = ({
   const dispatch = useDispatch();
   return (
     <tr>
-      <td>{name.toLowerCase()}</td>
+      <td>{name}</td>
       <td>{kilogram} kg</td>
       <td>{datePlanted}</td>
       <td>{dateOfHarvest}</td>
@@ -20,12 +20,13 @@ const ProductRow = ({
       <td>
         <button
           type="button"
-          onClick={() =>
+          onClick={() => {
             dispatch({
-              type: "MARK_AS_HARVESTED",
-              payload: { id: id, name: name, producer: producer },
-            })
-          }
+              type: "DELETE",
+              payload: { id: id },
+            });
+            dispatch({ type: "MARK_AS_HARVESTED", payload: { id: id } });
+          }}
         >
           Harvested
         </button>

@@ -34,6 +34,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
         <div className="dashboard-container">
           <h3 className="dashboard-title">SUPPLY DASHBOARD</h3>
           <div className="dashboard-table">
@@ -50,6 +51,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
         <div className="list-button-container">
           <Link to="/product-list">
             Product List

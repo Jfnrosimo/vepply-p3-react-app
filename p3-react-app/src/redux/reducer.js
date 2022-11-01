@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const initialState = {
   productData: ProductData,
+  harvestTable: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -20,12 +21,37 @@ const reducer = (state = initialState, action) => {
       };
       console.log(newProduct);
       return { ...state, productData: [...state.productData, newProduct] };
-    case "MARK_AS_HARVESTED":
+    case "DELETE":
+      console.log("DELETE works");
       return {
         ...state,
         productData: state.productData.filter(
           (data) => data.id !== action.payload.id
         ),
+      };
+    case "MARK_AS_HARVESTED":
+      console.log("MARK_AS_HARVESTED works");
+
+      // const [harvestTable, setHarvestTable] = useState([]);
+      // const onHarvested = (id) => {
+      //   //Create state for harvest table list
+      //   let harvestedItem = productData.filter((item) => item.id === id);
+      //   setHarvestTable([
+      //     ...harvestTable,
+      //     { name: harvestedItem[0].name, kilogram: harvestedItem[0].kilogram },
+      //   ]);
+      // };
+
+      let harvestedProduct = state.productData.filter(
+        (item) => item.id === action.payload.id
+      );
+      console.log(harvestedProduct);
+      return {
+        ...state,
+        harvestTable: [
+          ...state.harvestTable,
+          state.productData.filter((item) => item.id === action.payload.id),
+        ],
       };
     default:
       return state;
