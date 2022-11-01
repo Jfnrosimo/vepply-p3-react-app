@@ -5,7 +5,6 @@ const HarvestedRow = ({
   datePlanted,
   dateOfHarvest,
   producer,
-  onHarvestedProps,
 }) => {
   return (
     <tr>
@@ -15,9 +14,7 @@ const HarvestedRow = ({
       <td>{dateOfHarvest}</td>
       <td>{producer}</td>
       <td>
-        <button type="button" onClick={() => onHarvestedProps(id)}>
-          Add to market
-        </button>
+        <button type="button">Add to market</button>
       </td>
     </tr>
   );

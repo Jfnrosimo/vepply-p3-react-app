@@ -1,6 +1,3 @@
-//Import routing
-import { Link } from "react-router-dom";
-
 //Import redux
 import { useSelector } from "react-redux";
 
@@ -29,15 +26,8 @@ const ProductListsPage = () => {
   // const nextPage = () => setPage((prev) => prev + 1);
   // const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
 
-  // const [harvestTable, setHarvestTable] = useState([]);
-  // const onHarvested = (id) => {
-  //   //Create state for harvest table list
-  //   let harvestedItem = productData.filter((item) => item.id === id);
-  //   setHarvestTable([
-  //     ...harvestTable,
-  //     { name: harvestedItem[0].name, kilogram: harvestedItem[0].kilogram },
-  //   ]);
-  // };
+  console.log(harvestTable);
+
   return (
     <>
       <div className="product-list-container">
@@ -74,7 +64,7 @@ const ProductListsPage = () => {
       {/* <button onClick={prevPage}>Previous page</button>
       <button onClick={nextPage}>Next page</button> */}
 
-      <div className="product-list-table-2">
+      <div className="product-list-table-2" id="harvested-crop-table">
         <table>
           <thead>
             <tr>

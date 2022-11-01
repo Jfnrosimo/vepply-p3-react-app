@@ -9,6 +9,7 @@ import "./ProductForm.css";
 
 //Import link routing
 import { Link } from "react-router-dom";
+import { HashLink as Anchor } from "react-router-hash-link";
 
 //Import image
 import arrowLeft from "../assets/icons/arrow-left.png";
@@ -137,9 +138,12 @@ const ProductForm = () => {
             <img src={arrowLeft} alt="arrow left icon" />
             Back to Dashboard
           </Link>
-          <Link className="my-products-link" to="">
+          <Anchor
+            className="my-products-link"
+            to="/product-list#harvested-crop-table"
+          >
             Harvested crop <img src={arrowDown} alt="arrow down icon" />
-          </Link>
+          </Anchor>
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 
 //Import routing
 import { Link } from "react-router-dom";
+import { HashLink as Anchor } from "react-router-hash-link";
 
 //Import image
 import arrowRight from "../assets/icons/arrow-right.png";
@@ -27,7 +28,9 @@ const HomePage = () => {
           <div className="hero-description">
             <h2>Monitor vegetable supply and production</h2>
             <div className="hero-button">
-              <Link className="start-button">Start</Link>
+              <Anchor to="/#dashboard" className="start-button">
+                Start
+              </Anchor>
               <Link to="/product-list" className="add-button">
                 Products
               </Link>
@@ -36,7 +39,9 @@ const HomePage = () => {
         </div>
 
         <div className="dashboard-container">
-          <h3 className="dashboard-title">SUPPLY DASHBOARD</h3>
+          <h3 className="dashboard-title" id="dashboard">
+            SUPPLY DASHBOARD
+          </h3>
           <div className="dashboard-table">
             <TopProductTable />
           </div>

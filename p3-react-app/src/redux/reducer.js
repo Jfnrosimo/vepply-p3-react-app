@@ -21,6 +21,7 @@ const reducer = (state = initialState, action) => {
       };
       console.log(newProduct);
       return { ...state, productData: [...state.productData, newProduct] };
+
     case "DELETE":
       console.log("DELETE works");
       return {
@@ -41,17 +42,18 @@ const reducer = (state = initialState, action) => {
       //     { name: harvestedItem[0].name, kilogram: harvestedItem[0].kilogram },
       //   ]);
       // };
-
       let harvestedProduct = state.productData.filter(
-        (item) => item.id === action.payload.id
+        (data) => data.id === action.payload.id
       );
+      let addedProduct = {
+        name: harvestedProduct.name,
+        kilogram: harvestedProduct.kilogram,
+        datePlanted: harvestedProduct.datePlanted,
+      };
       console.log(harvestedProduct);
       return {
         ...state,
-        harvestTable: [
-          ...state.harvestTable,
-          state.productData.filter((item) => item.id === action.payload.id),
-        ],
+        harvestTable: [...state.harvestTable, addedProduct],
       };
     default:
       return state;

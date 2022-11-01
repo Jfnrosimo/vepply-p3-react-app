@@ -25,7 +25,15 @@ const ProductRow = ({
               type: "DELETE",
               payload: { id: id },
             });
-            dispatch({ type: "MARK_AS_HARVESTED", payload: { id: id } });
+            dispatch({
+              type: "MARK_AS_HARVESTED",
+              payload: {
+                id: id,
+                name: name,
+                kilogram: kilogram,
+                datePlanted: datePlanted,
+              },
+            });
           }}
         >
           Harvested
