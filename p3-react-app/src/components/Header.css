@@ -13,6 +13,18 @@
   padding: 0 40px 0;
 }
 
+.header-login a{
+  padding: 5px;
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-login a:hover{
+  background-color: var(--dark-color);
+  color: var(--light-color)
+}
+
 .header-title img {
   width: 40px;
   height: 40px;

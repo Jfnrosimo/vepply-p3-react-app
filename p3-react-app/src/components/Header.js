@@ -14,10 +14,10 @@ const Header = () => {
         <div className="header-nav">
           <div className="header-title">
             <img src={appLogo} alt="application logo" />
-            <h1>App Name</h1>
+            <h1>Vepply</h1>
           </div>
           <div className="header-login">
-            <Link to="">Login</Link>
+            <Link to="">Log-in</Link>
             <span>|</span>
             <Link to="">Register</Link>
           </div>
