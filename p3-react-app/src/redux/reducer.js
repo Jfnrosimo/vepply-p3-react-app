@@ -6,7 +6,6 @@ import { v4 as uuidv4 } from "uuid";
 const initialState = {
   productData: ProductData,
   harvestTable: [],
-  page: 0,
 };
 
 const reducer = (state = initialState, action) => {
@@ -29,7 +28,6 @@ const reducer = (state = initialState, action) => {
           (data) => data.id !== action.payload.id
         ),
       };
-
     case "MARK_AS_HARVESTED":
       let harvestedProduct = state.productData.filter(
         (data) => data.id === action.payload.id
@@ -43,7 +41,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         harvestTable: [...state.harvestTable, ...harvestedProduct],
       };
-
     case "DELETE":
       return {
         ...state,
@@ -51,16 +48,6 @@ const reducer = (state = initialState, action) => {
           (data) => data.id !== action.payload.id
         ),
       };
-
-    case "NEXT_PAGE":
-      return {
-        ...state,
-        page: state.productData.length !== 0 ? state.page + 1 : state.page,
-      };
-
-    case "PREVIOUS_PAGE":
-      return { ...state, page: state.page > 0 ? state.page - 1 : state.page };
-
     default:
       return state;
   }
