@@ -16,6 +16,11 @@
   font-size: 1.4rem;
 }
 
-.product-list-2-container table {
+.product-list-2-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.product-list-2-container table{
   width: 70%;
 }
