@@ -29,6 +29,7 @@ const reducer = (state = initialState, action) => {
           (data) => data.id !== action.payload.id
         ),
       };
+
     case "MARK_AS_HARVESTED":
       let harvestedProduct = state.productData.filter(
         (data) => data.id === action.payload.id
@@ -42,6 +43,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         harvestTable: [...state.harvestTable, ...harvestedProduct],
       };
+
     case "DELETE":
       return {
         ...state,
@@ -50,21 +52,15 @@ const reducer = (state = initialState, action) => {
         ),
       };
 
-    //---------------------Test table pagination------------------
-    // const [page, setPage] = useState(0); // create page state
-
-    // const productPageData = useMemo(() => {
-    //   //use useMemo to memorize page
-    //   return productData.slice(page * 5, page * 5 + 5);
-    // }, [page]);
-
-    // const nextPage = () => setPage((prev) => prev + 1);
-    // const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
-
-    case "MEMORIZE_PAGE":
-      return state.productData.slice(state.page * 5, state.page * 5 + 5);
     case "NEXT_PAGE":
-      return;
+      return {
+        ...state,
+        page: state.productData.length !== 0 ? state.page + 1 : state.page,
+      };
+
+    case "PREVIOUS_PAGE":
+      return { ...state, page: state.page > 0 ? state.page - 1 : state.page };
+
     default:
       return state;
   }

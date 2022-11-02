@@ -16,10 +16,17 @@ const ProductListsPage = () => {
   //import state from redux
   const productData = useSelector((state) => state.productData);
   const harvestTable = useSelector((state) => state.harvestTable);
+  const page = useSelector((state) => state.page);
+
+  const dispatch = useDispatch();
 
   //Create pagination for table
-  const dispatch = useDispatch();
-  const allProductPageData = useMemo(() => dispatch({ type: "MEMORIZE_PAGE" }));
+
+  const allProductPageData = useMemo(
+    () => productData.slice(page * 5, page * 5 + 5),
+    [page]
+  );
+  console.log(allProductPageData);
 
   console.log(harvestTable);
 
@@ -42,7 +49,7 @@ const ProductListsPage = () => {
               <th>Harvest Date</th>
               <th>Producer</th>
             </tr>
-            {productData.map((item) => (
+            {allProductPageData.map((item) => (
               <ProductRow
                 key={item.id}
                 id={item.id}
@@ -56,8 +63,20 @@ const ProductListsPage = () => {
           </tbody>
         </table>
       </div>
-      {/* <button onClick={prevPage}>Previous page</button>
-      <button onClick={nextPage}>Next page</button> */}
+      <div className="table-button-container">
+        <button onClick={() => dispatch({ type: "PREVIOUS_PAGE" })}>
+          Previous page
+        </button>
+        <button
+          onClick={
+            allProductPageData.length !== 0
+              ? () => dispatch({ type: "NEXT_PAGE" })
+              : null
+          }
+        >
+          Next page
+        </button>
+      </div>
 
       <div className="product-list-2-container" id="harvested-crop-table">
         <table>
