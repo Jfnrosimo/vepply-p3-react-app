@@ -20,8 +20,6 @@
 
 .hero h2 {
   margin: 0;
-  
-
   font-size: 5rem;
   color: var(--light-color);
 }
@@ -122,4 +120,34 @@
   text-decoration: none;
   font-size: 2rem;
   color: var(--dark-color)
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+/*----------------- MEDIUM SCREENS --------------------*/
+@media only screen and (max-width: 992px) {
+  .hero h2 {
+    font-size: 3.6rem;
+  }
+  .hero-button {
+    padding-top: 10px;  
+  }
+  .start-button, .add-button{
+    font-size: 1.1rem;
+    padding: 6px;
+  }
+}
+
+/*--------------------- SMALL SCREENS ------------------*/
+@media only screen and (max-width: 575px) {
+  .hero h2 {
+    font-size: 2.6rem;
+  }
+  .hero-button {
+    padding-top: 10px;  
+  }
+  .start-button, .add-button{
+    font-size: 1.1rem;
+    padding: 6px;
+  }
 }
