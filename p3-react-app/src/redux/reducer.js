@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 const initialState = {
   productData: ProductData,
   harvestTable: [],
+  page: 0,
 };
 
 const reducer = (state = initialState, action) => {
@@ -48,6 +49,22 @@ const reducer = (state = initialState, action) => {
           (data) => data.id !== action.payload.id
         ),
       };
+
+    //---------------------Test table pagination------------------
+    // const [page, setPage] = useState(0); // create page state
+
+    // const productPageData = useMemo(() => {
+    //   //use useMemo to memorize page
+    //   return productData.slice(page * 5, page * 5 + 5);
+    // }, [page]);
+
+    // const nextPage = () => setPage((prev) => prev + 1);
+    // const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
+
+    case "MEMORIZE_PAGE":
+      return state.productData.slice(state.page * 5, state.page * 5 + 5);
+    case "NEXT_PAGE":
+      return;
     default:
       return state;
   }

@@ -1,5 +1,5 @@
 //Import redux
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 //Import component
 import ProductForm from "../components/ProductForm";
@@ -13,18 +13,13 @@ import { useState, useMemo } from "react";
 import "./ProductListsPage.css";
 
 const ProductListsPage = () => {
+  //import state from redux
   const productData = useSelector((state) => state.productData);
   const harvestTable = useSelector((state) => state.harvestTable);
 
-  // const [page, setPage] = useState(0); // create page state
-
-  // const productPageData = useMemo(() => {
-  //   //use useMemo to memorize page
-  //   return productData.slice(page * 5, page * 5 + 5);
-  // }, [page]);
-
-  // const nextPage = () => setPage((prev) => prev + 1);
-  // const prevPage = () => setPage((prev) => (prev > 0 ? prev - 1 : prev)); // prev page need to add condition to avoid page going below 0
+  //Create pagination for table
+  const dispatch = useDispatch();
+  const allProductPageData = useMemo(() => dispatch({ type: "MEMORIZE_PAGE" }));
 
   console.log(harvestTable);
 
