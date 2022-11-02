@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 //Import component
 import ProductForm from "../components/ProductForm";
 import ProductRow from "../components/ProductRow";
-import HarvestedRow from "../components/ProductRow";
+import HarvestedRow from "../components/HarvestedRow";
 
 //Import state hook and useMemo
 import { useState, useMemo } from "react";
