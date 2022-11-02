@@ -19,11 +19,9 @@ const reducer = (state = initialState, action) => {
         dateOfHarvest: action.payload.dateOfHarvest,
         producer: action.payload.producer,
       };
-      console.log(newProduct);
       return { ...state, productData: [...state.productData, newProduct] };
 
     case "REMOVE_FROM_ALL_LIST":
-      console.log("DELETE works");
       return {
         ...state,
         productData: state.productData.filter(
@@ -31,17 +29,6 @@ const reducer = (state = initialState, action) => {
         ),
       };
     case "MARK_AS_HARVESTED":
-      console.log("MARK_AS_HARVESTED works");
-
-      // const [harvestTable, setHarvestTable] = useState([]);
-      // const onHarvested = (id) => {
-      //   //Create state for harvest table list
-      //   let harvestedItem = productData.filter((item) => item.id === id);
-      //   setHarvestTable([
-      //     ...harvestTable,
-      //     { name: harvestedItem[0].name, kilogram: harvestedItem[0].kilogram },
-      //   ]);
-      // };
       let harvestedProduct = state.productData.filter(
         (data) => data.id === action.payload.id
       );
@@ -50,13 +37,17 @@ const reducer = (state = initialState, action) => {
       //   kilogram: harvestedProduct[0].kilogram,
       //   datePlanted: harvestedProduct[0].datePlanted,
       // };
-      console.log(harvestedProduct);
       return {
         ...state,
         harvestTable: [...state.harvestTable, ...harvestedProduct],
       };
     case "DELETE":
-      return state;
+      return {
+        ...state,
+        harvestTable: state.harvestTable.filter(
+          (data) => data.id !== action.payload.id
+        ),
+      };
     default:
       return state;
   }

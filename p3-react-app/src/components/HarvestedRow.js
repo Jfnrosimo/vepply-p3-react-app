@@ -1,3 +1,6 @@
+//Import redux
+import { useDispatch } from "react-redux";
+
 const HarvestedRow = ({
   id,
   name,
@@ -6,6 +9,8 @@ const HarvestedRow = ({
   dateOfHarvest,
   producer,
 }) => {
+  const dispatch = useDispatch();
+
   return (
     <tr>
       <td>{name.toLowerCase()}</td>
