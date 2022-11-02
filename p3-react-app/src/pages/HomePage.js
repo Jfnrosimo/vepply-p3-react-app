@@ -29,10 +29,10 @@ const HomePage = () => {
             <h2>Monitor vegetable supply and production</h2>
             <div className="hero-button">
               <Anchor to="/#dashboard" className="start-button">
-                Start
+                MONITOR NOW
               </Anchor>
               <Link to="/product-list" className="add-button">
-                Products
+                ALL PRODUCTS
               </Link>
             </div>
           </div>

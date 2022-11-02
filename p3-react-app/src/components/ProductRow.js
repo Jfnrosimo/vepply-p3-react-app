@@ -25,9 +25,6 @@ const ProductRow = ({
               type: "MARK_AS_HARVESTED",
               payload: {
                 id: id,
-                // name: name,
-                // kilogram: kilogram,
-                // datePlanted: datePlanted,
               },
             });
             dispatch({
