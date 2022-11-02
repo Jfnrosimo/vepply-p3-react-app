@@ -7,5 +7,29 @@ footer {
   color: var(--light-color);
 }
 
+.footer-details-container {
+  display: flex;
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 30px 25px 0px;
+}
+
+.contact-us-container p {
+  font-size: 2rem;
+  padding-right: 40px;
+}
+
+.contact-us-container form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+
+
 
 

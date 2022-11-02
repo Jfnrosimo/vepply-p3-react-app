@@ -28,19 +28,16 @@ const reducer = (state = initialState, action) => {
           (data) => data.id !== action.payload.id
         ),
       };
+
     case "MARK_AS_HARVESTED":
       let harvestedProduct = state.productData.filter(
         (data) => data.id === action.payload.id
       );
-      // let addedProduct = {
-      //   name: harvestedProduct[0].name,
-      //   kilogram: harvestedProduct[0].kilogram,
-      //   datePlanted: harvestedProduct[0].datePlanted,
-      // };
       return {
         ...state,
         harvestTable: [...state.harvestTable, ...harvestedProduct],
       };
+
     case "DELETE":
       return {
         ...state,
@@ -48,6 +45,7 @@ const reducer = (state = initialState, action) => {
           (data) => data.id !== action.payload.id
         ),
       };
+
     default:
       return state;
   }

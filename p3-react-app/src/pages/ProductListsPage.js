@@ -6,9 +6,6 @@ import ProductForm from "../components/ProductForm";
 import ProductRow from "../components/ProductRow";
 import HarvestedRow from "../components/HarvestedRow";
 
-//Import state hook and useMemo
-import { useState, useMemo } from "react";
-
 //Import css
 import "./ProductListsPage.css";
 
@@ -16,10 +13,6 @@ const ProductListsPage = () => {
   //import state from redux
   const productData = useSelector((state) => state.productData);
   const harvestTable = useSelector((state) => state.harvestTable);
-
-  //Create pagination for table
-  const dispatch = useDispatch();
-  const allProductPageData = useMemo(() => dispatch({ type: "MEMORIZE_PAGE" }));
 
   console.log(harvestTable);
 
