@@ -11,13 +11,13 @@ const Footer = () => {
             <label htmlFor="email">Email:</label>
             <input type="email" id="email" placeholder="Enter your email" />
           </div>
-          <textarea></textarea>
-          <input type="button" value="Send message" />
+          <textarea rows="10" placeholder="Enter suggestions"></textarea>
+          <button>Send Message</button>
         </form>
       </div>
       <div className="footer-details-container">
         <div className="footer-column">
-          <ul>
+          <ul className="footer-nav">
             <li>Home</li>
             <li>About Us</li>
             <li>See a demo</li>
@@ -40,7 +40,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p>All rights reserved 2022 | Jefferson Rosimo</p>
+      <p className="credits">All rights reserved 2022 | Jefferson Rosimo</p>
+      <p className="credits">
+        Images from <a href="https://www.edmaration.com/">edmaration</a>
+      </p>
     </footer>
   );
 };
