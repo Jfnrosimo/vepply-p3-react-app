@@ -47,11 +47,18 @@ const HomePage = () => {
           </div>
           <div className="chart-container">
             <div className="doughnut-chart">
-              <h4>TITLE</h4>
+              <h4>
+                <small>Chart 1. </small>Current vegetable crop planted
+              </h4>
+              <small>
+                <em>By clicking each item, you can compare specific crop.</em>
+              </small>
               <DoughnutChart />
             </div>
             <div className="bar-chart">
-              <h4>TITLE</h4>
+              <h4>
+                <small>Chart 2. </small>Current vegetable crop planted
+              </h4>
               <BarChart />
             </div>
           </div>

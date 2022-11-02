@@ -22,7 +22,7 @@ const reducer = (state = initialState, action) => {
       console.log(newProduct);
       return { ...state, productData: [...state.productData, newProduct] };
 
-    case "DELETE":
+    case "REMOVE_FROM_ALL_LIST":
       console.log("DELETE works");
       return {
         ...state,
@@ -55,6 +55,8 @@ const reducer = (state = initialState, action) => {
         ...state,
         harvestTable: [...state.harvestTable, ...harvestedProduct],
       };
+    case "DELETE":
+      return state;
     default:
       return state;
   }

@@ -28,7 +28,7 @@ const ProductRow = ({
               },
             });
             dispatch({
-              type: "DELETE",
+              type: "REMOVE_FROM_ALL_LIST",
               payload: { id: id },
             });
           }}

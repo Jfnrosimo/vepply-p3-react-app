@@ -16,6 +16,14 @@ const HarvestedRow = ({
       <td>
         <button type="button">Add to market</button>
       </td>
+      <td>
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "DELETE", payload: { id: id } })}
+        >
+          Delete
+        </button>
+      </td>
     </tr>
   );
 };
