@@ -45,15 +45,15 @@ const reducer = (state = initialState, action) => {
       let harvestedProduct = state.productData.filter(
         (data) => data.id === action.payload.id
       );
-      let addedProduct = {
-        name: harvestedProduct.name,
-        kilogram: harvestedProduct.kilogram,
-        datePlanted: harvestedProduct.datePlanted,
-      };
+      // let addedProduct = {
+      //   name: harvestedProduct[0].name,
+      //   kilogram: harvestedProduct[0].kilogram,
+      //   datePlanted: harvestedProduct[0].datePlanted,
+      // };
       console.log(harvestedProduct);
       return {
         ...state,
-        harvestTable: [...state.harvestTable, addedProduct],
+        harvestTable: [...state.harvestTable, ...harvestedProduct],
       };
     default:
       return state;

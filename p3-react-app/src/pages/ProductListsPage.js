@@ -64,11 +64,11 @@ const ProductListsPage = () => {
       {/* <button onClick={prevPage}>Previous page</button>
       <button onClick={nextPage}>Next page</button> */}
 
-      <div className="product-list-table-2" id="harvested-crop-table">
+      <div className="product-list-2-container" id="harvested-crop-table">
         <table>
           <thead>
             <tr>
-              <th>Your harvested crops</th>
+              <th colSpan={5}>Your harvested crops</th>
             </tr>
           </thead>
           <tbody>

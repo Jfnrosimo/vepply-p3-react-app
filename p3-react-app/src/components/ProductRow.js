@@ -22,17 +22,17 @@ const ProductRow = ({
           type="button"
           onClick={() => {
             dispatch({
-              type: "DELETE",
-              payload: { id: id },
-            });
-            dispatch({
               type: "MARK_AS_HARVESTED",
               payload: {
                 id: id,
-                name: name,
-                kilogram: kilogram,
-                datePlanted: datePlanted,
+                // name: name,
+                // kilogram: kilogram,
+                // datePlanted: datePlanted,
               },
+            });
+            dispatch({
+              type: "DELETE",
+              payload: { id: id },
             });
           }}
         >

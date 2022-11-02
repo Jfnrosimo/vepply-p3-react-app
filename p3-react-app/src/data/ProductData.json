@@ -34,7 +34,7 @@
   {
     "id": "g43gdfg",
     "name": "carrot",
-    "kilogram": 20,
+    "kilogram": 120,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-11-11",
     "producer": "Ben's Farm" 
@@ -50,7 +50,7 @@
   {
     "id": "2f24",
     "name": "brocolli",
-    "kilogram": 300,
+    "kilogram": 220,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "The Farmers Gardens" 
@@ -58,7 +58,7 @@
   {
     "id": "2f24-g45",
     "name": "bell pepper",
-    "kilogram": 300,
+    "kilogram": 330,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "Organic Farms" 
@@ -90,7 +90,7 @@
   {
     "id": "212v324-c2r",
     "name": "sayote",
-    "kilogram": 450,
+    "kilogram": 400,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "Elnora's Farms" 
@@ -106,7 +106,7 @@
   {
     "id": "212-v324-c32c2r",
     "name": "onion",
-    "kilogram": 450,
+    "kilogram": 490,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "Mary's Farms" 

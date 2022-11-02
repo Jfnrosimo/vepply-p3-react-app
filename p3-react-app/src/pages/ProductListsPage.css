@@ -15,3 +15,7 @@
 .product-list-container thead th {
   font-size: 1.4rem;
 }
+
+.product-list-2-container table {
+  width: 70%;
+}
