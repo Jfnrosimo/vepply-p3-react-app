@@ -45,3 +45,20 @@
 .header-login span{
   padding: 0 10px 0;
 }
+
+/*----------------- SMALL SCREENS --------------------*/
+@media only screen and (max-width: 575px) {
+  .header-login{
+    padding: 0 10px 0;
+  }
+
+  .header-title h1 {
+    padding-left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .header-login a{
+    font-size: .9rem;
+    font-weight: bold;
+  }
+}

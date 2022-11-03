@@ -68,12 +68,12 @@ footer form button:hover {
 
 .footer-details-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 20px;
 }
 
 .footer-column {
-  padding: 0 100px;
+ 
 }
 
 .credits {
