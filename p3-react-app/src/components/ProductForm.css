@@ -83,3 +83,19 @@ small{
   width: 40px;
   padding-left: 20px;
 }
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+/*----------------- MEDIUM SCREENS --------------------*/
+@media only screen and (max-width: 992px) {
+  .product-form-container {
+    justify-content: space-between;
+  }
+  .product-form-container {
+    flex-direction: row-reverse;
+    width: 90%;
+  }
+  .link-container a {
+    font-size: 1.1rem;
+  }
+}

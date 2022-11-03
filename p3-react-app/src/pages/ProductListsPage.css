@@ -25,3 +25,27 @@
   width: 70%;
   padding: 40px;
 }
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+/*----------------- MEDIUM SCREENS --------------------*/
+@media only screen and (max-width: 992px) {
+  .product-list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-list-container table{
+    width: 100%;
+  }
+}
+
+/*----------------- SMALL SCREENS --------------------*/
+@media only screen and (max-width: 575px) {
+  .product-list-container table{
+    width: 30%;
+  }
+  .product-list-container table tr,
+  .product-list-2-container table tr{
+    font-size: .8rem;
+  }
+}
