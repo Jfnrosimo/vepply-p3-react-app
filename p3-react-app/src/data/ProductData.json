@@ -42,7 +42,7 @@
   {
     "id": "g4gsd",
     "name": "potato",
-    "kilogram": 300,
+    "kilogram": 100,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "Organic Farms" 
@@ -106,7 +106,7 @@
   {
     "id": "212-v324-c32c2r",
     "name": "onion",
-    "kilogram": 490,
+    "kilogram": 660,
     "datePlanted": "2022-10-18",
     "dateOfHarvest": "2022-10-18",
     "producer": "Mary's Farms" 
