@@ -13,4 +13,5 @@
 
 body * {
   font-family: 'Mulish', sans-serif;
+  outline: 1px solid black;
 }

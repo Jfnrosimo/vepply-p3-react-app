@@ -1,11 +1,12 @@
 .hero {
   background-image: url("../assets/images/hero-bg-image.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   
   display: flex;
   justify-content: center;
 
-  height: 92vh;
+  height: 93vh;
   text-align: center;
 }
 
